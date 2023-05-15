@@ -114,3 +114,9 @@ form button {
 }
 
 /* Footer Styles */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
