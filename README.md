@@ -1,2 +1,2 @@
-# 02-Advanced-CSS-Style-Portfolio-Project
+# 02-Advanced-CSS-Style-Portfolio
 CSS Portfolio
