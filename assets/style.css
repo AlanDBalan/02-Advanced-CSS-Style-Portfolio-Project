@@ -31,11 +31,12 @@ header {
 }
 
 .Background-Image {
-    height: 35%;
+    height: 38%;
     width: 100%;
     background-size: cover;
     background-position: left;
     position: absolute;
+    border-bottom: #333 solid 10px;
     background-image: url("../assets/images/Alan new.jpg")
   }
 
@@ -75,7 +76,22 @@ nav ul li a {
     padding: 50px;
     border-top: #333 solid 10px ;
     border-bottom: #333 solid 10px;
-    opacity: 80%;
+    opacity: 85%;
+    height: 165px;
+    display: flex;
+    position: relative;
+}
+
+#about span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    margin-left: 150px;
+    width: 80%;
+    bottom: 32px;
+    font-size: larger;
+    display: flex;
+
+
 }
 
 /* Portfolio Section Styles */
@@ -134,3 +150,9 @@ footer {
     color: #fff;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
