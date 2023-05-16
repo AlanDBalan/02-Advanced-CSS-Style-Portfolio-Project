@@ -30,15 +30,76 @@ header {
     display: flex;
 }
 
-.Background-Image {
-    height: 38%;
-    width: 100%;
+.image-headshot {
+    background-image: url("./images/Alan\ new-enhanced.jpg");
+    height: 1200px;
     background-size: cover;
-    background-position: left;
-    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute
     border-bottom: #333 solid 10px;
-    background-image: url("../assets/images/Alan new.jpg")
+    flex: auto;
   }
+
+#landing { 
+        background-color: rgba(51, 51, 51, 1);
+        color: #fff; 
+        width: 1400px; 
+        height: 1100px;
+        margin: 0 auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -1166px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+.image-forehead {
+    background-image: url("./images/Alan\ Forhead.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    border-bottom: #333 solid 10px;
+    flex: auto;
+  }
+
+  .image-eyes {
+    background-image: url("./images/Alan\ Eyes.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: -10px;
+    z-index: 1;
+    border-bottom: #333 solid 10px;
+    border-top: #333 solid 10px;;
+    flex: auto;
+  }
+
+  .image-mustache {
+    background-image: url("./images/Alan\ Mustache.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: -10px;
+    z-index: 1;
+    border-bottom: #333 solid 10px;
+    border-top: #333 solid 10px;;
+    flex: auto;
+  }
+
+  
 
 nav ul {
     list-style-type: none;
@@ -75,23 +136,6 @@ nav ul li a {
     background-color: #f9f9f9;
     padding: 50px;
     border-top: #333 solid 10px ;
-    border-bottom: #333 solid 10px;
-    opacity: 85%;
-    height: 165px;
-    display: flex;
-    position: relative;
-}
-
-#about span {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    margin-left: 150px;
-    width: 80%;
-    bottom: 32px;
-    font-size: larger;
-    display: flex;
-
-
 }
 
 /* Portfolio Section Styles */
@@ -151,8 +195,38 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    header {
-        flex-direction: column;
+@media (max-width: 600px) {
+
+    .image-headshot {
+    height: 860px;
+    border-bottom: #333 solid 10px;
+    right: 10px;
     }
 
+    .image-forehead,
+    .image-eyes,
+    .image-mustache {
+    height: 200px;
+    top: -1px;
+    }
+
+    #landing {
+        height: 600px;
+        width: 340px;
+        top: -700px;
+    }
+
+header {
+    flex-direction: row;
+
+    }
+nav ul {
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+}
