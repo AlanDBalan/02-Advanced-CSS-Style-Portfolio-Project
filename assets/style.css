@@ -32,29 +32,28 @@ header {
 
 .image-headshot {
     background-image: url("./images/Alan\ new-enhanced.jpg");
-    height: 1200px;
+    height: 940px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute
     border-bottom: #333 solid 10px;
     flex: auto;
   }
 
-#landing { 
-        background-color: rgba(51, 51, 51, 1);
+
+#landing    { 
+        background-color: rgba(51, 51, 51, 99%);
         color: #fff; 
         width: 1400px; 
-        height: 1100px;
-        margin: 0 auto; 
+        height: 800px;
+        margin: 0 auto;
+        position: absolute;
+        top: 100px;
+        left: 200px;
         display: flex;
+        border: #272727 solid 10px;
         justify-content: center;
-        align-items: center;
-        position: relative;
-        top: -1166px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        align-content: center;
         
       }
 
@@ -81,7 +80,7 @@ header {
     top: -10px;
     z-index: 1;
     border-bottom: #333 solid 10px;
-    border-top: #333 solid 10px;;
+    border-top: #333 solid 10px;
     flex: auto;
   }
 
@@ -117,9 +116,18 @@ nav ul li a {
 }
 
 /* Home Section Styles */
+#welcome    {
+    font-size: 80px;
+    list-style-type: none;
+    color: #f9f9f9;
+    position: relative;
+    top: 330px;
+}
+
 #home {
     text-align: center;
     padding: 50px 0;
+
 }
 
 #home h1 {
@@ -198,7 +206,7 @@ footer {
 @media (max-width: 600px) {
 
     .image-headshot {
-    height: 860px;
+    height: 790px;
     border-bottom: #333 solid 10px;
     right: 10px;
     }
