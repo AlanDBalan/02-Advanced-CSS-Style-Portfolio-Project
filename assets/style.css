@@ -27,10 +27,21 @@ header {
     background-color: #333;
     padding: 20px;
     color: #fff;
+    display: flex;
 }
+
+.Background-Image {
+    height: 35%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    background-image: url("../assets/images/Alan new.jpg")
+  }
 
 nav ul {
     list-style-type: none;
+    display: flex;
 }
 
 nav ul li {
@@ -62,6 +73,9 @@ nav ul li a {
 #about {
     background-color: #f9f9f9;
     padding: 50px;
+    border-top: #333 solid 10px ;
+    border-bottom: #333 solid 10px;
+    opacity: 80%;
 }
 
 /* Portfolio Section Styles */
@@ -106,7 +120,7 @@ form textarea {
 }
 
 form button {
-    background-color: #007bff;
+    background-color: #ff7300;
     color: #fff;
     border: none;
     padding: 10px 20px;
