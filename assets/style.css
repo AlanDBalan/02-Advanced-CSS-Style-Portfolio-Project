@@ -15,6 +15,10 @@ body {
 
 h1, h2, h3 {
     margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    justify-content: space-around;
+    display: flex;
 }
 
 a {
@@ -27,7 +31,14 @@ header {
     background-color: #333;
     padding: 20px;
     color: #fff;
-    display: flex;
+    position: sticky;
+    z-index: 8;
+    top: 0;
+
+}
+
+header:hover    {
+    display: block;
 }
 
 .image-headshot {
@@ -44,12 +55,12 @@ header {
 #landing    { 
         background-color: rgba(51, 51, 51, 99%);
         color: #fff; 
-        width: 1400px; 
+        width: 50vh; 
         height: 800px;
         margin: 0 auto;
         position: absolute;
         top: 100px;
-        left: 200px;
+        left: 220px;
         display: flex;
         border: #272727 solid 10px;
         justify-content: center;
@@ -77,8 +88,8 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     position: sticky;
-    top: -10px;
-    z-index: 1;
+    top: 0px;
+    z-index: 3;
     border-bottom: #333 solid 10px;
     border-top: #333 solid 10px;
     flex: auto;
@@ -91,8 +102,8 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     position: sticky;
-    top: -10px;
-    z-index: 1;
+    top: 0px;
+    z-index: 5;
     border-bottom: #333 solid 10px;
     border-top: #333 solid 10px;;
     flex: auto;
@@ -103,6 +114,7 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
+    
 }
 
 nav ul li {
@@ -117,17 +129,28 @@ nav ul li a {
 
 /* Home Section Styles */
 #welcome    {
-    font-size: 80px;
+    font-size: 75px;
     list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #f9f9f9;
     position: relative;
     top: 330px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+#wallpaper  {
+    position: relative;
+    display: flex;
+    height: 800px;
+    width: 100%
 }
 
 #home {
     text-align: center;
     padding: 50px 0;
-
+    justify-items: center;
 }
 
 #home h1 {
@@ -146,18 +169,59 @@ nav ul li a {
     border-top: #333 solid 10px ;
 }
 
+#forehead {
+    background-color: #f9f9f9;
+    padding: 50px;
+    padding-top: 450px;
+    padding-bottom: 450px;
+    z-index: 2;
+    position: sticky;
+    top: 40px;
+}
+
+.Paragraph {
+    display: flex;
+    font-size: medium;
+    text-align: center;
+}
+
 /* Portfolio Section Styles */
 #portfolio {
     padding: 50px;
 }
 
+#port {
+    background-color: #f9f9f9;
+    padding: 50px;
+    z-index: 4;
+    position: sticky;
+    top: 40px;
+    padding-bottom: 50px;
+}
+
 .project {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
 }
 
 .project img {
     max-width: 100%;
-    height: auto;
+    height: 325px;
+    margin-bottom: 10px;
+}
+
+.project2 {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.project2 img {
+    max-width: 100%;
+    height: 250px;
     margin-bottom: 10px;
 }
 
@@ -173,6 +237,9 @@ nav ul li a {
 #contact {
     background-color: #f9f9f9;
     padding: 50px;
+    padding-top: 150px;
+    z-index: 7;
+    position: sticky;
 }
 
 form label {
@@ -201,6 +268,7 @@ footer {
     padding: 20px;
     color: #fff;
     text-align: center;
+    padding-top: 100px;
 }
 
 @media (max-width: 600px) {
@@ -214,14 +282,50 @@ footer {
     .image-forehead,
     .image-eyes,
     .image-mustache {
-    height: 200px;
-    top: -1px;
+        height: 200px;
+        position: sticky;
+    
     }
 
     #landing {
-        height: 600px;
+        height: 250px;
         width: 340px;
-        top: -700px;
+        top: 250px;
+        bottom: 50px;
+        left: -50px;
+        right: -50px;
+    }
+    
+    #welcome    {
+        position: relative;
+        top: 10px;
+        right: 10px;
+        text-align: center;
+    }
+
+    #wallpaper  {
+        height: 100vh;
+    }
+
+    #about {
+        z-index: 3;
+    }
+    #forehead   {
+        z-index: 0;
+        position: static;
+    }
+    #portfolio  {
+        z-index: 5;
+    }
+    #port   {
+        z-index: 0;
+        position: static;
+    }
+    .image-mustache {
+        z-index: 7;
+    }
+    #contact    {
+        z-index: 6;
     }
 
 header {
@@ -231,6 +335,7 @@ header {
 nav ul {
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 
 nav ul li {
