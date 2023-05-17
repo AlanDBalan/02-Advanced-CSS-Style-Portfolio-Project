@@ -173,7 +173,7 @@ nav ul li a {
     background-color: #f9f9f9;
     padding: 50px;
     padding-top: 450px;
-    padding-bottom: 450px;
+    padding-bottom: 500px;
     z-index: 2;
     position: sticky;
     top: 40px;
@@ -181,8 +181,8 @@ nav ul li a {
 
 .Paragraph {
     display: flex;
-    font-size: medium;
     text-align: center;
+    font-size: x-large;
 }
 
 /* Portfolio Section Styles */
@@ -207,7 +207,7 @@ nav ul li a {
 }
 
 .project img {
-    max-width: 100%;
+    max-width: 100vh;
     height: 325px;
     margin-bottom: 10px;
 }
@@ -220,7 +220,7 @@ nav ul li a {
 }
 
 .project2 img {
-    max-width: 100%;
+    max-width: 100vh;
     height: 250px;
     margin-bottom: 10px;
 }
@@ -268,7 +268,6 @@ footer {
     padding: 20px;
     color: #fff;
     text-align: center;
-    padding-top: 100px;
 }
 
 @media (max-width: 600px) {
@@ -295,7 +294,7 @@ footer {
         left: -50px;
         right: -50px;
     }
-    
+
     #welcome    {
         position: relative;
         top: 10px;
@@ -326,6 +325,7 @@ footer {
     }
     #contact    {
         z-index: 6;
+        padding-top: 200px;
     }
 
 header {
@@ -342,4 +342,9 @@ nav ul li {
     margin-right: 0;
     margin-bottom: 10px;
 }
+.project2 img {
+    height: 185px;
+}
+.project img {
+    height: 225px;
 }
